@@ -77,7 +77,7 @@ Running the training script writes everything to `results/`:
 
 _<paste the comparison table from `results/metrics.csv` here>_
 
-![Model comparison](results\metrics.csv)
+![Comparaison des modèles](results/comparison_plot.png)
 
 ## Project Structure
 

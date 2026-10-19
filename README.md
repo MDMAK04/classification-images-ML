@@ -77,7 +77,21 @@ Running the training script writes everything to `results/`:
 
 _<paste the comparison table from `results/metrics.csv` here>_
 
-![Comparaison des modèles](results/metrics.csv)
+### Comparaison des modèles
+
+Voici les résultats obtenus sur l'ensemble de test (Accuracy, Precision, Recall et F1-Score) pour nos 7 modèles :
+
+| Modèle | Accuracy | Precision | Recall | F1-Score |
+| :--- | :--- | :--- | :--- | :--- |
+| **Random Forest** | **94.90%** | **95.20%** | **94.90%** | **94.56%** |
+| SVM_Linear | 93.88% | 93.88% | 93.88% | 93.88% |
+| SVM_Sigmoid | 93.88% | 93.83% | 93.88% | 93.57% |
+| Decision Tree | 92.86% | 92.63% | 92.86% | 92.60% |
+| KNN_k5 | 91.84% | 91.55% | 91.84% | 91.43% |
+| SVM_RBF | 90.82% | 91.75% | 90.82% | 89.53% |
+| KNN_k3 | 89.80% | 89.35% | 89.80% | 88.96% |
+
+*Le **Random Forest** est le modèle le plus performant avec une précision de 94.9%.*
 
 ## Project Structure
 

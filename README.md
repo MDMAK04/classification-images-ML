@@ -66,21 +66,21 @@ All models are evaluated on identical features and an identical split. Each one 
 | 7 | Random Forest | 100 trees |
 
 
-## Comparaison des modèles
+## Model Comparison
 
-Voici les résultats obtenus sur l'ensemble de test (Accuracy, Precision, Recall et F1-Score) pour nos 7 modèles :
+Results on the held-out test set (Accuracy, Precision, Recall and F1-Score, weighted averages over both classes) for the 7 models:
 
-| Modèle | Accuracy | Precision | Recall | F1-Score |
+| Model | Accuracy | Precision | Recall | F1-Score |
 | :--- | :--- | :--- | :--- | :--- |
 | **Random Forest** | **94.90%** | **95.20%** | **94.90%** | **94.56%** |
-| SVM_Linear | 93.88% | 93.88% | 93.88% | 93.88% |
-| SVM_Sigmoid | 93.88% | 93.83% | 93.88% | 93.57% |
+| SVM (Linear) | 93.88% | 93.88% | 93.88% | 93.88% |
+| SVM (Sigmoid) | 93.88% | 93.83% | 93.88% | 93.57% |
 | Decision Tree | 92.86% | 92.63% | 92.86% | 92.60% |
-| KNN_k5 | 91.84% | 91.55% | 91.84% | 91.43% |
-| SVM_RBF | 90.82% | 91.75% | 90.82% | 89.53% |
-| KNN_k3 | 89.80% | 89.35% | 89.80% | 88.96% |
+| KNN (k=5) | 91.84% | 91.55% | 91.84% | 91.43% |
+| SVM (RBF) | 90.82% | 91.75% | 90.82% | 89.53% |
+| KNN (k=3) | 89.80% | 89.35% | 89.80% | 88.96% |
 
-*Le **Random Forest** est le modèle le plus performant avec une précision de 94.9%.*
+**Random Forest** achieves the best performance in this run, with an accuracy of 94.90%.
 
 ## Project Structure
 

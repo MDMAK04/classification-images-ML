@@ -65,19 +65,8 @@ All models are evaluated on identical features and an identical split. Each one 
 | 6 | Decision Tree | default parameters |
 | 7 | Random Forest | 100 trees |
 
-## Results
 
-Running the training script writes everything to `results/`:
-
-- `metrics.csv` — accuracy, precision, recall, F1 (positive class = `obj_ship`) and macro F1 for each model
-- `confusion_<model>.png` / `.csv` — confusion matrices
-- `rapport_<model>.txt` — full classification reports
-- `comparaison_accuracy.png` — accuracy comparison chart
-- `exemple_prediction.png` — a sample test prediction
-
-_<paste the comparison table from `results/metrics.csv` here>_
-
-### Comparaison des modèles
+## Comparaison des modèles
 
 Voici les résultats obtenus sur l'ensemble de test (Accuracy, Precision, Recall et F1-Score) pour nos 7 modèles :
 

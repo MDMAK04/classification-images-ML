@@ -19,7 +19,7 @@ The project covers the full machine learning workflow:
 
 1. **Data preparation** — loading, resizing, stratified train/test split
 2. **Feature extraction** — 59 handcrafted features per image
-3. **Training** — six models, each wrapped in a `StandardScaler` pipeline
+3. **Training** — seven models, each wrapped in a `StandardScaler` pipeline
 4. **Evaluation** — confusion matrix, precision, recall, F1-score, accuracy
 5. **Comparison** — all models on the same data and the same features
 6. **Deployment** — interactive web app for live predictions
@@ -63,6 +63,7 @@ All models are evaluated on identical features and an identical split. Each one 
 | 4 | KNN | k = 3 |
 | 5 | KNN | k = 5 |
 | 6 | Decision Tree | default parameters |
+| 7 | Random Forest | 100 trees |
 
 ## Results
 
@@ -76,7 +77,7 @@ Running the training script writes everything to `results/`:
 
 _<paste the comparison table from `results/metrics.csv` here>_
 
-![Model comparison](results/comparaison_accuracy.png)
+![Model comparison](metrics.csv)
 
 ## Project Structure
 

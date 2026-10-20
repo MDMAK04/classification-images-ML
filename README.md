@@ -13,6 +13,8 @@ An end-to-end supervised image classification pipeline that distinguishes **cars
 
 ---
 
+**🚀 Live demo:** [https://car-vs-ship.streamlit.app/](https://car-vs-ship.streamlit.app/)   <---
+
 ## Overview
 
 The project covers the full machine learning workflow:

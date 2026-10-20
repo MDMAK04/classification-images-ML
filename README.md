@@ -115,6 +115,9 @@ To prevent the models from simply ignoring the minority class (ships), we conduc
 ├── data/                      # Dataset location (git-ignored)
 │   └── README.md
 └── report/                    # LaTeX / Word report
+
+
+```
 ## Getting Started
 
 ### 1. Install
@@ -125,6 +128,7 @@ cd <repo-name>
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
+
 ```
 
 ### 2. Prepare the data

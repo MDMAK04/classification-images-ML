@@ -7,13 +7,11 @@
 
 An end-to-end supervised image classification pipeline that distinguishes **cars** from **ships** using **handcrafted features** (color, texture, shape) and compares **six classical machine learning models**. A **Streamlit web app** lets anyone upload an image and see the predictions of every model.
 
-**Live demo:** _<paste your Streamlit URL here>_
+**Live demo:** **🚀 Live demo:** [https://car-vs-ship.streamlit.app/](https://car-vs-ship.streamlit.app/)  
 
 > Academic project — Supervised Image Classification Workshop (Pr. Abdelouahed Sabri), Master in Machine Learning and Multimedia Intelligence, USMBA, Fès.
 
 ---
-
-**🚀 Live demo:** [https://car-vs-ship.streamlit.app/](https://car-vs-ship.streamlit.app/)   <---
 
 ## Overview
 

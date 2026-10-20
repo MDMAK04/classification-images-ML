@@ -87,8 +87,6 @@ with st.sidebar:
     model_name = st.selectbox("Modèle utilisé", list(MODELS), index=list(MODELS).index("Random forest"))
     st.divider()
     st.markdown("**Projet**  \nAtelier de classification supervisée  \nPr. Abdelouahed Sabri")
-    st.markdown("**Dataset** : DB2C  \n🚗 `obj_car` (classe 0)  \n🚢 `obj_ship` (classe 1)")
-    st.markdown("**Entrée du modèle** : 59 caractéristiques par image (image redimensionnée en 128×128).")
 
 tab_pred, tab_comp, tab_method = st.tabs(["Prédiction", "Comparaison des modèles", "Méthodologie"])
 

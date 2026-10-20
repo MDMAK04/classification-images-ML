@@ -90,7 +90,7 @@ with st.sidebar:
     st.markdown("**Dataset** : DB2C  \n🚗 `obj_car` (classe 0)  \n🚢 `obj_ship` (classe 1)")
     st.markdown("**Entrée du modèle** : 59 caractéristiques par image (image redimensionnée en 128×128).")
 
-tab_pred, tab_comp, tab_method = st.tabs(["🔎 Prédiction", "📊 Comparaison des modèles", "🧪 Méthodologie"])
+tab_pred, tab_comp, tab_method = st.tabs(["Prédiction", "Comparaison des modèles", "Méthodologie"])
 
 with tab_pred:
     model = load_model(MODELS[model_name])

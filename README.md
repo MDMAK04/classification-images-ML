@@ -82,24 +82,39 @@ Results on the held-out test set (Accuracy, Precision, Recall and F1-Score, weig
 
 **Random Forest** achieves the best performance in this run, with an accuracy of 94.90%.
 
+## ⚖️ Imbalance Analysis (`class_weight="balanced"`)
+
+Our dataset is imbalanced: **400 cars** vs **90 ships** (approx. 81% / 19%). 
+To prevent the models from simply ignoring the minority class (ships), we conducted a comparative analysis using `class_weight="balanced"` (see `Analysis/imbalance_analysis.py`).
+
+**Key findings:**
+- **Without correction:** Models like Random Forest achieve high global accuracy (94.9%) but miss several ships (e.g., 5 False Negatives, Recall ship = 72.2%).
+- **With `balanced`:** The SVM (Sigmoid) improves its Recall on ships to **77.78%** (only 4 missed). While global accuracy drops slightly, the model becomes much more reliable at detecting the rare class.
+
 ## Project Structure
 
 ```text
 .
-├── app.py                 # Streamlit web application
+├── app.py                     # Streamlit web application
 ├── requirements.txt
-├── src/
-│   ├── data.py            # loading, resizing, stratified split
-│   ├── features.py        # RGB, HSV, GLCM, LBP, Hu feature extraction
-│   ├── models.py          # the six model pipelines
-│   └── train.py           # training, evaluation, figures, model saving
-├── models/                # trained models (.joblib)
-├── results/               # metrics, confusion matrices, reports, figures
-├── notebooks/             # original workshop notebook
-├── data/                  # dataset location (git-ignored)
-└── report/                # LaTeX report
-```
-
+├── packages.txt               # System dependencies (libgl1) for Streamlit Cloud
+├── LICENSE
+├── README.md
+├── Analysis/                  # Scripts for class imbalance study
+│   └── imbalance_analysis.py
+├── Feature_Extraction/        # Feature extraction & CSV export
+│   └── export_features.py
+├── src/                       # Core source code
+│   ├── data.py                # Loading, resizing, stratified split
+│   ├── features.py            # RGB, HSV, GLCM, LBP, Hu extraction
+│   ├── models.py              # The 7 model pipelines
+│   ├── train.py               # Training, evaluation, model saving
+│   └── evaluate.py            # Comparison plots
+├── models/                    # Trained models (.joblib)
+├── results/                   # Metrics, confusion matrices, figures
+├── data/                      # Dataset location (git-ignored)
+│   └── README.md
+└── report/                    # LaTeX / Word report
 ## Getting Started
 
 ### 1. Install
